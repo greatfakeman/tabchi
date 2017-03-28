@@ -515,7 +515,7 @@ return tdcli.sendMessage(msg.chat_id_, 0, 1, text1, 1, "")
       local query = tostring(gps) .. " " .. tostring(sgps) .. " " .. tostring(pvs) .. " " .. tostring(links) .. " " .. tostring(sudo) .. " " .. tostring(contacts)
           local text = [[
 		  
-Normal Stats By : @To_My_Amigos
+Normal Stats By : @GFAKEMbot
 
 Users : ]] .. tostring(pvs) .. [[
 
