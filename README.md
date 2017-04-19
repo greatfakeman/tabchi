@@ -1,53 +1,52 @@
-# Tabchi V4.3 Decompiled 
+##Install
+To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
+```sh
+cd $HOME && git clone https://github.com/greatfakeman/tabchi.git && cd tabchi && chmod 777 install.sh && ./install.sh && lua creator.lua
+```
+```
+Enter Full Sudo ID : 123456    
+```
+Enter your telegram Id in "Full Sudo ID" part
+you can see your account Id Number in [@UserInfoBot](https://t.me/userinfobot)
 
-TG-CLI Based Broadcasting Bot.
+###Then
 
-## راهنمای نصب :
+```sh
+./tabchi-0.sh
 
-git clone https://Github.com/kia-pashang/Tabchi.git
+# Enter a phone number & confirmation code.
+```
 
-cd Tabchi
+##Create more bot
+run agin your server
 
-chmod +x install.sh
-
-./install.sh
-
-## نصب تمام شد
-
-## ران کردن ربات به صورت پیشفرض
-
-cd Tabchi
-
+```
+cd tabchi
 lua creator.lua
+```
 
-بعد ایدی سودو ست کنید مثلا : 353581089
+Enter Full Sudo ID : 123456 
 
-screen ./tabchi-0.sh
+```sh
+./tabchi-1.sh
 
-شماره ست کنید و حالشو ببرین
+# Enter a phone number & confirmation code.
+```
+and next bot ....
+***
 
-## ران کردن بات به صورت دستی
+##Run
+when login your server
 
-cd Tabchi
-
-lua manual-creator.lua
-
-ایدی تبچی ست کنید مثلا : 5
-
-بعدش ایدی سودو بدین مثلا : 353581089
-
-screen ./tabchi-5.sh
-
-شماره ست کنید و حالشو ببرین
-
-# استفاده از انتی کرش
-
-وقتی شماره و همه چی رو ست کردین اول دستور اسکرین استفاده کنید وقتی ربات خاموش شد مراحل زیر رو انجام بدین
-
-cd Tabchi
-
-killall bash
-
+```
+cd tabchi
 ./anticrash.sh
+```
 
-عمرا ربات اف بشه :)
+***
+
+##Instruction and commands 
+
+for see instruction and command send  /help in your bot
+
+Enjoy Your New Bot!
